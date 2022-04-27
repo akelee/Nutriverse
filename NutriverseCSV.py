@@ -13,18 +13,9 @@ field_names = ['Age', 'Gender', 'Weight_kg', 'Height_cm', 'Activity_level', 'Sta
 #     spreadsheet = csv.DictWriter(csv_file, fieldnames = field_names)
 #     spreadsheet.writeheader()
 #     spreadsheet.writerows(data)
-data = [{'Age': 54, 'Gender': 'Female', 'Weight_kg': 76, 'Height_cm': 171, 'Activity_level': 'Moderate', 'Status': 'None'},
-        {'Age': 20, 'Gender': 'Male', 'Weight_kg': 62, 'Height_cm': 173, 'Activity_level': 'High', 'Status': 'None'},
-        {'Age': 38, 'Gender': 'Female', 'Weight_kg': 51, 'Height_cm': 165, 'Activity_level': 'Moderate',
-         'Status': 'Lactating'},
-        {'Age': 19, 'Gender': 'Female', 'Weight_kg': 60, 'Height_cm': 166, 'Activity_level': 'High',
-         'Status': 'None'},
-        {'Age': 49, 'Gender': 'Male', 'Weight_kg': 52, 'Height_cm': 177, 'Activity_level': 'Low',
-         'Status': 'None'},
-        {'Age': 33, 'Gender': 'Female', 'Weight_kg': 81, 'Height_cm': 159, 'Activity_level': 'High',
-         'Status': 'Pregnant'},
-        {'Age': 76, 'Gender': 'Female', 'Weight_kg': 50, 'Height_cm': 154, 'Activity_level': 'Low',
-         'Status': 'None'},
+data = [{'Age': 28, 'Gender': 'Female', 'Weight_kg': 66, 'Height_cm': 166, 'Activity_level': 'Moderate', 'Status': 'Pregnant'},
+        {'Age': 21, 'Gender': 'Male', 'Weight_kg': 88, 'Height_cm': 194, 'Activity_level': 'Low', 'Status': 'None'},
+
 
         ]
 with open('nutriverse.csv', 'a+') as csv_file:
