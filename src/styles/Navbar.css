@@ -15,18 +15,6 @@ nav {
   color: white;
   background-color: #7eb685;
   border-radius: 1rem;
-  padding: 0.5rem 1rem;
-}
-
-#home:hover,
-#recipes:hover,
-#popular:hover {
-  background-color: #deeddf;
-}
-
-#nav-links > h2:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 img {
@@ -34,28 +22,79 @@ img {
   position: relative;
 }
 
-#nav-links > h2 {
-  margin: 0 10px 5px;
-}
-
 #nutriverse {
   background-color: #deeddf;
   border-radius: 1rem;
-  padding: 0.5rem 1rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
-}
-
-#nutriverse:hover {
-  text-decoration: underline;
-  cursor: pointer;
+  color: #7eb685;
+  font-size: 1.25em;
 }
 
 #nutri {
   color: black;
 }
 
-#verse {
-  color: #7eb685;
+#nutriverse:hover,
+#nutriverse:active {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #7eb685;
+}
+
+.Navbar:hover {
+  color: white;
+}
+
+.pipe {
+  font-size: 1.5em;
+  padding: 0.5rem 0rem 1rem;
+}
+
+/* #nav-links {
+  padding: 0.25rem 1.5rem 0rem;
+} */
+
+#nav-links > h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* 
+#home,
+#recipes,
+#popular {
+  padding: 0.5rem 1rem;
+} */
+
+#home {
+  padding: 0.5rem 1rem 1rem 3.5rem;
+  /* border-right: solid white; */
+}
+
+#home:hover {
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+#recipes {
+  padding: 0.5rem 1rem 1rem;
+}
+
+#popular {
+  padding: 0.5rem 3.5rem 1rem 1rem;
+  /* border-left: solid white; */
+}
+
+#popular:hover {
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+#home:hover,
+#recipes:hover,
+#popular:hover {
+  background-color: #deeddf;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #sign-up {
@@ -65,12 +104,13 @@ img {
 #sign-up-button {
   color: white;
   background-color: #7eb685;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   padding: 0.5rem 1rem;
   border: none;
 }
 
-#sign-up-button:hover {
+#sign-up-button:hover,
+#sign-up-button:active {
   text-decoration: underline;
   cursor: pointer;
   background-color: #deeddf;
