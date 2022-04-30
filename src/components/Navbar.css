@@ -1,0 +1,77 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #7eb685;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+#home:hover,
+#recipes:hover,
+#popular:hover {
+  background-color: #deeddf;
+}
+
+#nav-links > h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+img {
+  object-fit: contain;
+  position: relative;
+}
+
+#nav-links > h2 {
+  margin: 0 10px 5px;
+}
+
+#nutriverse {
+  background-color: #deeddf;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem 1rem;
+  border: none;
+}
+
+#nutriverse:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#nutri {
+  color: black;
+}
+
+#verse {
+  color: #7eb685;
+}
+
+#sign-up {
+  padding: 0.5rem 1rem;
+}
+
+#sign-up-button {
+  color: white;
+  background-color: #7eb685;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+#sign-up-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #deeddf;
+}
