@@ -1,6 +1,6 @@
-// import { getNutritionInfo } from "./api/api";
-import "./App.css";
-import Navbar from "./components/Navbar.jsx";
+import { getNutritionInfo } from "../api/api";
+import "../styles/App.css";
+import Navbar from "./Navbar";
 
 // text - action - color - background color
 
