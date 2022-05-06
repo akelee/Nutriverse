@@ -35,4 +35,3 @@ def find_values_for_category(gender, pregnancy_status, age):
 
 print(find_values_for_category('Female', 'Neither', 27))
 
-# age, gender, status, bmi (weight/height)
