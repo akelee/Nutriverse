@@ -1,4 +1,5 @@
-import csv, json
+import csv
+import json
 
 vitamin_types = ['A', 'B6', 'B12', 'Biotin', 'C']  # add vitamins as required
 genders = ['Male', 'Female']
@@ -53,14 +54,12 @@ print(json.dumps(data_females, indent=2, sort_keys=True))
 
 
 def find_values_for_age(age, values):
-    print(values[max(filter(lambda k: k <= age, values))])
     return values[max(filter(lambda k: k <= age, values))]
 
 
 def find_values_for_category(gender, pregnancy_status, age):
-    print(find_values_for_age(age, data[gender][pregnancy_status]))
-    return find_values_for_age(age, data[gender][pregnancy_status])
+    return find_values_for_age(age, data_females[gender][pregnancy_status])
 
 
-# print(find_values_for_category('Female', 'Neither', 27))
+print(find_values_for_category('Female', 'N/A', 27))
 
