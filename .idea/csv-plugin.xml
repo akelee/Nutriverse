@@ -3,28 +3,7 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="C:\Users\Alexis\Desktop\Nutriverse\src\data\Intake\Vitamin+Minerals+Data - Sheet1.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="C:\Users\Alexis\Downloads\Vitamins - Sheet1.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\NEVO2021.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="|" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\nutriverse.csv">
+        <entry key="\src\data\intake\vitamins.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
