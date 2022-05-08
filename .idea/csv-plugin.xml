@@ -3,14 +3,21 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="C:\Users\Alexis\Desktop\NEVO2021.csv">
+        <entry key="\src\data\ingredient-data\NEVO2021.csv">
           <value>
             <Attribute>
               <option name="separator" value="|" />
             </Attribute>
           </value>
         </entry>
-        <entry key="\nutriverse.csv">
+        <entry key="\src\data\intake\vitamins.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\vitamins.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
