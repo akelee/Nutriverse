@@ -3,17 +3,20 @@ import "../styles/Navbar.css";
 export const Navbar = () => {
   return (
     <nav className="Navbar">
-      <div id="nutriverse">
-        <h1>
-          <img
-            id="nutriverse-logo"
-            src={process.env.PUBLIC_URL + "/images/nutri-verse-logo.png"}
-            alt="Nutriverse Logo"
-          />
-          <span id="nutri">nutri</span>
-          <span id="verse">verse.</span>
-        </h1>
-      </div>
+      <a href="/home" id="navigate-home">
+        <div id="nutriverse">
+          <h1>
+            <img
+              id="nutriverse-logo"
+              src={require("../assets/images/nutriverse-logo.png")}
+              alt="Nutriverse Logo"
+              width="30em"
+            />
+            <span id="nutri">nutri</span>
+            <span id="verse">verse.</span>
+          </h1>
+        </div>
+      </a>
       <div id="nav-links">
         <div id="home">
           <h2>Home</h2>

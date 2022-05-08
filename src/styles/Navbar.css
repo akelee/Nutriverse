@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -17,22 +21,27 @@ nav {
   border-radius: 1rem;
 }
 
+#navigate-home:visited {
+  color: #7eb685;
+}
+
 img {
   object-fit: contain;
   position: relative;
 }
 
 #nutriverse {
+  color: #7eb685;
   background-color: #deeddf;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   border: none;
-  color: #7eb685;
   font-size: 1.25em;
 }
 
 #nutri {
   color: black;
+  padding-left: 0.5rem;
 }
 
 #nutriverse:hover,
