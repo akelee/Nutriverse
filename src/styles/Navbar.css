@@ -5,6 +5,7 @@ nav {
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 #nav-links {
