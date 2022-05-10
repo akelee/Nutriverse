@@ -1,0 +1,183 @@
+.nutriverse__navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2rem 5.5rem;
+
+}
+
+.nutriverse__navbar-links {
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nutriverse__navbar-links_logo {
+    /* margin-right: 1.5rem; */
+}
+
+.nutriverse__navbar-links_logo img {
+    width: 300px;
+    height:60px
+}
+
+.nutriverse__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-button-2);
+    font-size: 30px;
+    float: right;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 503px;
+    height: 57px;
+    margin: 0 7.5rem;
+    font-weight: bold;
+
+}
+
+.nutriverse__navbar-links_container span {
+    color:var(--color-text-button);
+    font-weight: bold;
+}
+
+.nutriverse__navbar-links_container a:hover {
+    color: rgba(79, 79, 79, 0.846);
+    transition: color .4s;
+}
+
+.nutriverse__navbar-sign {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: var(--color-button-2);
+    background-size: 2rem;
+
+}
+
+.nutriverse__navbar-links_container p,
+.nutriverse__navbar-sign p,
+.nutriverse__navbar-menu_container p{
+    color: var(--color-text-button);
+    line-height: 2rem;;
+    margin: 0 1rem;
+    cursor: pointer;    
+}
+
+.nutriverse__navbar-menu_container p:hover {
+    color:#7EB685;
+    transition: color .4s;
+    
+}
+
+.nutriverse__navbar-menu_container span {
+    display: none;
+}
+
+.nutriverse__navbar-sign button,
+.nutriverse__navbar-menu_container button {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 179px;
+    height: 65px;
+    left: 1150.5px;
+    top: 2rem;
+    background: #7EB685;
+    border-radius: 45.36px;
+    border: none;
+    color: var(--color-text-button);
+    cursor:pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nutriverse__navbar-sign button:hover {
+    color: rgba(79, 79, 79, 0.846);
+    transition: color .4s;
+}
+
+.nutriverse__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+    
+}
+
+.nutriverse__navbar-menu svg {
+    cursor: pointer;
+}
+
+.nutriverse__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding:2rem;
+    position: absolute;
+    top: 40px;
+    right:0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+
+}
+
+.nutriverse__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width:1050px) {
+    .nutriverse__navbar-links_container {
+        display: none;
+    }
+    .nutriverse__navbar-menu {
+        display: flex;
+        margin-left: 3rem;
+        background-color:rgba(29, 29, 29, 0.2);
+    }
+    .nutriverse__navbar-sign {
+        display: none;
+    }
+    .nutriverse__navbar-menu_container-links {
+        color:black;
+    }
+    .nutriverse__navbar-links_container p,
+    .nutriverse__navbar-sign p,
+    .nutriverse__navbar-menu_container p{
+    line-height: 2.5rem;
+    margin: 0 1rem;
+    cursor: pointer; 
+    color:var(--color-button-1);
+    font-size: 30px;
+
+}
+}
+
+@media screen and (max-width:700px) {
+    .nutriverse__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .nutriverse__navbar {
+        padding: 2rem;
+    }
+    .nutriverse__navbar-sign {
+        display: none;
+    }
+    .nutriverse__navbar-menu_container {
+        top:20px;
+    }
+    
+}
