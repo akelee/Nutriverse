@@ -1,0 +1,82 @@
+/* .nutriverse__whatNutriverse-feature {
+    display: flex;
+} */
+
+.nutriverse__whatNutriverse-feature, 
+.nutriverse__features-container__feature {
+    margin: 0;
+}
+
+.nutriverse__whatNutriverse-feature, 
+.nutriverse__features-container__feature-text {
+    max-width: 700px;
+}
+
+.main-heading {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+    margin: -4.5rem;
+    color:var(--color-text-header-2);
+}
+
+.nutriverse__whatNutriverse-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nutriverse__whatNutriverse-heading p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1rem;
+    text-align: center;
+    color:var(--color-button-1);
+}
+
+
+.nutriverse__whatNutriverse-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+#quality-recipes {
+    /* background:var(--color-card) ; */
+}
+
+
+@media screen and (max-width:1050px){
+  
+}
+
+@media screen and (max-width:650px){
+    .nutriverse__whatNutriverse-heading p {
+        font-size: 24px;
+        line-height: 1rem;
+    }
+
+    .nutriverse__whatNutriverse-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:490px){
+
+    .nutriverse__whatNutriverse-heading p {
+        font-size: 24px;
+        line-height: 1rem;
+        text-align: center;
+        color:var(--color-button-1);
+    }
+
+    .nutriverse__whatNutriverse-container {
+        flex-direction: column;
+    }
+
+}

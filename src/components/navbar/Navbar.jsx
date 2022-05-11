@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/nutriverselogo.png'
+import logo from '../../assets/nutriverselogo.png';
+// import 'bootstrap/dist/css/bootstrap.css';
 
 const Menu = () => (
   <>

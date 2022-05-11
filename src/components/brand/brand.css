@@ -1,0 +1,88 @@
+.nutriverse__brand-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-heading2 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 4.5rem;
+    color:var(--color-text-header-2)
+}
+
+.nutriverse__brand-heading p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 3rem;
+    text-align: center;
+    color:var(--color-button-1);
+}
+
+.nutriverse__brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.ready-script {
+   flex:1;
+   padding-top: 1.5rem;
+}
+
+.join-now {
+    display: flex;
+    margin:3.5rem 0;
+    background-color: #ffffff;
+    padding:50px;
+    border-radius: 30px;
+}
+
+.join-now button {
+    width: 210px;
+    height: 75px;
+    margin-top: .5rem;
+    background: #7EB685;
+    border-radius: 45.36px;
+    border: none;
+    color: var(--color-text-button);
+    cursor:pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+.join-now button:hover {
+    color: rgba(79, 79, 79, 0.846);
+    transition: color .4s;
+}
+
+@media screen and (max-width:650px){
+    .nutriverse__brand-heading p {
+        font-size: 24px;
+        line-height: 3rem;
+    }
+
+    .nutriverse__brand-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:490px){
+
+    .nutriverse__brand-heading p {
+        font-size: 24px;
+        line-height: 1rem;
+        text-align: center;
+        color:var(--color-button-1);
+    }
+
+    .nutriverse__brand-container {
+        flex-direction: column;
+    }
+
+}
