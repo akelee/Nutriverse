@@ -1,7 +1,10 @@
 import React from 'react'
-import { Feature } from '../../components'
-// import { Link } from 'reaact-router-dom';
 import './whatNutriverse.css'
+import { Feature } from '../../components'
+import { Link } from 'react-router-dom';
+import recipe from '../../assets/recipe.png'
+import plan from '../../assets/plan.png'
+import meal from '../../assets/meal.png'
 
 const WhatNutriverse = () => {
   return (
@@ -15,13 +18,13 @@ const WhatNutriverse = () => {
         </div>
         <div className="nutriverse__whatNutriverse-container">
             <div id="quality-recipes">
-                <a href="#recipe"><Feature text="Quality Recipes"/></a>
+                <Link to="/recipe"><img src={recipe} alt="recipe" width="280px" /><Feature text="Quality Recipes"/></Link>
             </div>
             <div id="personalised-plans">
-                <a href="#plans"><Feature text="Personalised Plans"/></a>
+                <Link to="/plan"><img src={plan} alt="recipe" width="280px" /><Feature text="Personalised Plans"/></Link>
             </div>
             <div id="meal-planning">
-                <a href="#meals"><Feature text="Meal Planning"/></a>
+                <Link to="/meal"><img src={meal} alt="meal" width="280px" /><Feature text="Meal Planning"/></Link>
             </div>
         </div>
     </div>
