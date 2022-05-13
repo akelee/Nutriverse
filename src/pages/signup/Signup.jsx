@@ -3,7 +3,7 @@ import './signup.css'
 import useForm from '../../pages/UseForm';
 
 const Signup = () => {
-  const {handleChange, values,handleSubmit} = useForm();
+  const {handleChange, values, handleSubmit} = useForm();
 
   return (
     <div className="nutriverse__signup-container">
