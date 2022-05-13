@@ -24,11 +24,17 @@
 
 .nutriverse__brand-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 4rem;
+}
+
+.nutriverse__brand-container div {     
+    text-align: center;
+    font-size: 24px;
+    margin-left: 10px;
 }
 
 .ready-script {
@@ -64,15 +70,35 @@
 @media screen and (max-width:650px){
     .nutriverse__brand-heading p {
         font-size: 24px;
-        line-height: 3rem;
+        line-height: 1rem;
     }
-
+    .nutriverse__brand-heading {
+        margin-top: -5rem;
+    }
     .nutriverse__brand-container {
         flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .nutriverse__brand-container div{   
+        margin:.5rem 0 ;
+        font-size: 24px;
+    }
+
+    .join-now {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ready-script{
+        margin-bottom: 1rem;
+        font-size: 26px;
+        text-align: center;
     }
 }
 
-@media screen and (max-width:490px){
+@media screen and (max-width:550px){
 
     .nutriverse__brand-heading p {
         font-size: 24px;

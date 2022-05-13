@@ -68,7 +68,7 @@
 }
 
 .nutriverse__navbar-menu_container p:hover {
-    color:#7EB685;
+    color:var(--color-button-1);
     transition: color .4s;
     
 }
@@ -144,6 +144,8 @@
         display: flex;
         margin-left: 3rem;
         background-color:rgba(29, 29, 29, 0.2);
+        padding: .5rem;
+        background-color: #7eb685dc;
     }
     .nutriverse__navbar-sign {
         display: none;
@@ -159,6 +161,10 @@
     cursor: pointer; 
     color:var(--color-button-1);
     font-size: 30px;
+    padding: .5rem;
+    background-color: #7eb685f6;
+    color: #ffffff;
+    
 
 }
 }

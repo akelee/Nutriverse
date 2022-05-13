@@ -2,15 +2,16 @@ import React, { useState } from 'react'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/nutriverselogo.png';
+import { Link } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.css';
 
 const Menu = () => (
   <>
-  <p><a href="#home">Home</a></p>
+  <p><Link to="/home">Home</Link></p>
   <span>|</span>
-  <p><a href="#recipe">Recipe</a></p>
+  <p><Link to="/recipe">Recipe</Link></p>
   <span>|</span>
-  <p><a href="#popular">Popular</a></p>
+  <p><Link to="/popular">Popular</Link></p>
   </>
 )
 
@@ -21,7 +22,7 @@ const Navbar = () => {
     <div className="nutriverse__navbar">
       <div className="nutriverse__navbar-links">
         <div className="nutriverse__navbar-links_logo">
-          <a href="#home"><img src={logo} alt="logo"/></a>
+          <Link to="/home"><img src={logo} alt="logo"/></Link>
           </div>
           <div className="nutriverse__navbar-links_container">
             <Menu />
@@ -29,7 +30,7 @@ const Navbar = () => {
         </div>
         <div className="nutriverse__navbar-sign">
           {/* <p>Sign in</p> */}
-          <button type="button">Sign up</button>
+          <Link to="/signup"><button type="button">Sign up</button></Link>
         </div>
       <div className="nutriverse__navbar-menu">
         {toggleMenu
