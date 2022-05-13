@@ -1,6 +1,7 @@
 import React from 'react'
 import './signup.css'
 import useForm from '../../pages/UseForm';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   const {handleChange, values, handleSubmit} = useForm();
@@ -29,8 +30,10 @@ const Signup = () => {
           </label>
           <input id="password2" type="password" name="confirmpassword" className='form-input' placeholder='Confirm password' value={values.password2} onChange={handleChange}/>
         </div>
-        <button className="form-input-btn" type="submit">Sign up</button>
-        <span className="form-input-login">Already have an account? Sign in <a href="#">here</a></span>
+        <div className="btn-signin">
+          <button className="form-input-btn" type="submit">Submit</button>
+          <span className="form-input-login">Or sign in <Link to="/signin">here</Link></span>
+          </div>
       </form>
     
     </div>

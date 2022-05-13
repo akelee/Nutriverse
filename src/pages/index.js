@@ -9,3 +9,4 @@ export { default as Navbar } from '../components/navbar/Navbar.jsx';
 export { default as Values } from '../pages/values/Values.jsx';
 export { default as UserInput } from '../pages/userInput/UserInput.jsx';
 export { default as UseForm } from '../pages/useForm/UseForm.jsx';
+export { default as SignIn } from '../pages/signIn/SignIn.jsx';

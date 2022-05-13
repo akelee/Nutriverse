@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Recipe from './pages/recipe/Recipe';
 import Popular from './pages/popular/Popular';
 import Signup from './pages/signup/Signup';
+import SignIn from './pages/signIn/SignIn';
 import UserInput from './pages/userInput/UserInput';
 import Meal from './pages/meal/Meal';
 import Plan from './pages/plan/Plan';
@@ -31,6 +32,7 @@ root.render(
         <Route path="/about" element= {<About/>} />
         <Route path="/values" element= {<Values/>} />
         <Route path="/goals" element= {<Goals/>} />
+        <Route path="/signIn" element= {<SignIn/>} />
 
       </Routes>
     </BrowserRouter>
