@@ -1,0 +1,29 @@
+
+.nutriverse__recipe_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+.nutriverse__recipe_info {
+    background-color: #ffffff;
+    width:80%;
+    padding:10rem;
+    border-radius: 15px;
+}
+
+.nutriverse__recipe_info h2 {
+    display:flex;
+    /* flex-direction: row; */
+    /* float: right; */
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: var(--color-text-header-2);
+}
+
+.nutrients img {
+
+}

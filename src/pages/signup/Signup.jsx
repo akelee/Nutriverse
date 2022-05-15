@@ -2,6 +2,7 @@ import React from 'react'
 import './signup.css'
 import useForm from '../../pages/UseForm';
 import { Link } from 'react-router-dom';
+// import signUpValidate from './SignUpValidate';
 
 const Signup = () => {
   const {handleChange, values, handleSubmit} = useForm();

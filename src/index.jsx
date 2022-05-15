@@ -13,7 +13,9 @@ import Plan from './pages/plan/Plan';
 import About from './pages/about/About';
 import Values from './pages/values/Values';
 import Goals from './pages/goals/Goals';
+import SignUpValidate from './pages/signUpValidate/SignUpValidate';
 import { Navbar } from './components';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,6 +35,7 @@ root.render(
         <Route path="/values" element= {<Values/>} />
         <Route path="/goals" element= {<Goals/>} />
         <Route path="/signIn" element= {<SignIn/>} />
+        <Route path="/signUpValidate" element = { <SignUpValidate/>} />
 
       </Routes>
     </BrowserRouter>
