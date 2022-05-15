@@ -10,3 +10,4 @@ export { default as Values } from '../pages/values/Values.jsx';
 export { default as UserInput } from '../pages/userInput/UserInput.jsx';
 export { default as UseForm } from '../pages/useForm/UseForm.jsx';
 export { default as SignIn } from '../pages/signIn/SignIn.jsx';
+export { default as SignUpValidate } from '../pages/signUpValidate/SignUpValidate.jsx';
