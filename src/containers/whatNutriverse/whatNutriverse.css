@@ -7,10 +7,6 @@
     margin: 0;
 }
 
-.nutriverse__whatNutriverse-feature, 
-.nutriverse__features-container__feature-text {
-    max-width: 700px;
-}
 
 .main-heading {
     font-weight: 300;
@@ -39,7 +35,7 @@
 
 .nutriverse__whatNutriverse-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -49,7 +45,8 @@
 .nutriverse__whatNutriverse-container div {     
     text-align: center;
     font-size: 24px;
-    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width:650px){
@@ -68,18 +65,14 @@
     }
 }
 
-@media screen and (max-width:550px){
-
+@media screen and (max-width:550px) {
     .nutriverse__whatNutriverse-heading p {
         font-size: 24px;
         line-height: 1rem;
         text-align: center;
         color:var(--color-button-1);
     }
-
     .nutriverse__whatNutriverse-container {
         flex-direction: column;
     }
-    
-
 }
