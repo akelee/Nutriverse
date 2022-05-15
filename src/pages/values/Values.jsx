@@ -4,8 +4,8 @@ import { Route, Link } from 'react-router-dom';
 
 const Values = () => {
   return (
-    <div>Values
-        <div>sdijnofjv</div>
+    <div className="nutriverse__values-container">Values
+        <div className="nutriverse__values-body">sdijnofjv</div>
     </div>
   )
 }

@@ -9,9 +9,6 @@ import meal from '../../assets/meal.png'
 const WhatNutriverse = () => {
   return (
     <div className="nutriverse__whatNutriverse section__margin" id="what-nutri">
-        {/* <div className="nutriverse__whatNutriverse-feature">
-            <Feature />
-        </div> */}
         <div className="nutriverse__whatNutriverse-heading">
             <h1 className='main-heading'>WHAT WE DO</h1>
             <p>Our Products</p>

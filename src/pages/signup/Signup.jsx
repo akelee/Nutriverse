@@ -1,7 +1,8 @@
-import React from "react";
-import "./signup.css";
+import React from 'react'
+import './signup.css'
 import userForm from "../forms/UserForm";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+// import signUpValidate from './SignUpValidate';
 
 function handleClick(event) {
   return "You have not filled out all the fields yet";
