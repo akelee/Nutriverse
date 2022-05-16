@@ -1,6 +1,5 @@
 import React from 'react'
 import './userInput.css'
-import { Widget } from '@typeform/embed-react'
 
 
 
