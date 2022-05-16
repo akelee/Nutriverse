@@ -15,6 +15,7 @@ import Values from './pages/values/Values';
 import Goals from './pages/goals/Goals';
 import SignUpValidate from './pages/signUpValidate/SignUpValidate';
 import { Navbar } from './components';
+import RecipeList from './pages/RecipeList.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +35,7 @@ root.render(
         <Route path="/goals" element={<Goals />} />
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/signUpValidate" element = { <SignUpValidate/>} />
+        <Route path="/recipeList" element = { <RecipeList/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
