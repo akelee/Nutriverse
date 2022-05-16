@@ -25,6 +25,7 @@ root.render(
       <Routes>  
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/popular" element={<Popular />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/userInput" element={<UserInput />} />
