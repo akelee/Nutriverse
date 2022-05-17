@@ -33,7 +33,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your username"
             value={values.username}
-            onBlur={}
+            // onBlur={}
           />
         </div>
         <div className="form-input">
@@ -47,7 +47,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your Email"
             value={values.email}
-            onBlur={}
+            // onBlur={}
           />
         </div>
         <div className="form-input">
@@ -61,7 +61,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your password"
             value={values.password}
-            onBlur={}
+            // onBlur={}
           />
           <div className="password-invalid"></div>
         </div>
@@ -76,7 +76,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Confirm password"
             value={values.password2}
-            onBlur={}
+            // onBlur={}
           />
         </div>
         <div className="btn-signin">
