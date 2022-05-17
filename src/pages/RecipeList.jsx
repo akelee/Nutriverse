@@ -1,10 +1,10 @@
 import React from 'react'
 
 function RecipeList({recipeData}) {
-  console.log(recipeData.products);
+  console.log(recipeData.results);
   return (
-    <div>{recipeData.products.map(product => 
-      <p>{product.title} <img src={product.image} alt="" /></p>)}</div>
+    <div>{recipeData.results.map(result => 
+      <p>{result.title} <img src={result.image} alt="" /></p>)}</div>
   )
 }
 
