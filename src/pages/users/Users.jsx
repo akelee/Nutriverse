@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getUsersDummyData } from "../../api/userApi";
-import { getUsers } from "../../api/userApi";
+import { getUsersDummyData, getUsers } from "../../api/api";
 import UserCard from "../../components/UserCard";
 
 export default function Users() {
@@ -12,9 +11,9 @@ export default function Users() {
     }, 1000);
   });
 
-  // useEffect(() => {
-  //   getUsers().then((data) => setUsers(data));
-  // }, []);
+  useEffect(() => {
+    getUsers().then((data) => setUsers(data));
+  }, []);
 
   return (
     <div className="users-display">

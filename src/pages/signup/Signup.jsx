@@ -1,14 +1,30 @@
 import React from "react";
 import "./signup.css";
-import userForm from "../forms/UserForm";
+import { useState } from "react";
+import userForm from "../forms/SignUpForm";
 import { Link } from "react-router-dom";
+import validateInfo from "../signUpValidate/SignUpValidate";
 
 function handleClick(event) {
   return "You have not filled out all the fields yet";
 }
 
-function handleSubmit(event) {
-  return <Link to="/success"></Link>;
+const validateInput = (e) => {};
+
+function handleSubmit(e) {
+  e.preventDefault();
+
+  const { username, email, password, password2 } = useState("");
+
+  console.log(e.target);
+  console.log(username, email, password, password2);
+
+  const errors = validateInput(username, email, password, password2);
+  if (errors.length > 0) {
+    this.setState({ errors });
+    return;
+  }
+  // return <Link to="/success"></Link>;
 }
 
 const SignUp = () => {
@@ -29,7 +45,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your username"
             value={values.username}
-            // onChange={handleChange}
+            onBlur={validateInfo}
           />
         </div>
         <div className="form-input">
@@ -41,9 +57,9 @@ const SignUp = () => {
             type="text"
             name="Email"
             className="form-input"
-            placeholder="Enter your Email"
+            placeholder="Enter your email"
             value={values.email}
-            // onChange={handleChange}
+            onBlur={validateInfo}
           />
         </div>
         <div className="form-input">
@@ -57,7 +73,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your password"
             value={values.password}
-            // onChange={handleChange}
+            onBlur={validateInfo}
           />
         </div>
         <div className="form-input">
@@ -71,7 +87,6 @@ const SignUp = () => {
             className="form-input"
             placeholder="Confirm password"
             value={values.password2}
-            // onChange={handleChange}
           />
         </div>
         <div className="btn-signin">
@@ -79,6 +94,7 @@ const SignUp = () => {
             className="form-input-btn"
             type="submit"
             onClick={handleClick}
+            onSubmit={handleSubmit}
           >
             Submit
           </button>

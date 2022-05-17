@@ -22,6 +22,7 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/recipe" element={<Recipe />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/popular" element={<Popular />} />
         <Route path="/signup" element={<SignUp />} />
