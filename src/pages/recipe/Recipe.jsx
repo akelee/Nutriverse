@@ -14,7 +14,7 @@ const Recipe = () => {
 
   const APP_KEY = "740b00f217f748a49fc4253694287265"
   
-  const url = `https://api.spoonacular.com/food/products/search?q=${query}&apiKey=740b00f217f748a49fc4253694287265`
+  const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=3&apiKey=740b00f217f748a49fc4253694287265`
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -24,7 +24,7 @@ const Recipe = () => {
 
   function getRecipeData() {
     fetch(
-      `https://api.spoonacular.com/food/products/search?query=${query}&apiKey=740b00f217f748a49fc4253694287265`
+      `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=3&apiKey=740b00f217f748a49fc4253694287265`
     )
     .then((response) => response.json())
     .then((data) => {
@@ -67,3 +67,5 @@ const Recipe = () => {
 export default Recipe
 
 // GET https://api.spoonacular.com/recipes/extract
+
+// https://api.spoonacular.com/food/products/search?query=yoghurt&apiKey=6d23d6c9c2c24ababc529c8f144b3628
