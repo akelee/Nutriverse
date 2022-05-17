@@ -2,14 +2,17 @@ import React from 'react'
 import './signup.css'
 import userForm from "../forms/UserForm";
 import { Link } from 'react-router-dom';
-// import signUpValidate from './SignUpValidate';
+import signUpValidate from '../signUpValidate/SignUpValidate'
 
 function handleClick(event) {
   return "You have not filled out all the fields yet";
 }
 
-function handleSubmit(event) {
-  return <Link to="/success"></Link>;
+function handleSubmit(e) {
+  // if(validateInfo(e)) 
+  console.log(e);
+    // return <Link to="/success"></Link>;
+
 }
 
 const SignUp = () => {
@@ -30,7 +33,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your username"
             value={values.username}
-            // onChange={handleChange}
+            onBlur={}
           />
         </div>
         <div className="form-input">
@@ -44,7 +47,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your Email"
             value={values.email}
-            // onChange={handleChange}
+            onBlur={}
           />
         </div>
         <div className="form-input">
@@ -58,8 +61,9 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your password"
             value={values.password}
-            // onChange={handleChange}
+            onBlur={}
           />
+          <div className="password-invalid"></div>
         </div>
         <div className="form-input">
           <label htmlFor="confirmpassword" className="form-label">
@@ -72,7 +76,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Confirm password"
             value={values.password2}
-            // onChange={handleChange}
+            onBlur={}
           />
         </div>
         <div className="btn-signin">
@@ -80,6 +84,7 @@ const SignUp = () => {
             className="form-input-btn"
             type="submit"
             onClick={handleClick}
+            onSubmit={handleSubmit}
           >
             Submit
           </button>
