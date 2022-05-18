@@ -1,33 +1,13 @@
 import { useState, useEffect } from "react";
-import { localEndpoint } from "../../api/userApi";
-import axios from "axios";
+import { localEndpoint, signUp } from "../../api/api";
 
 const userForm = () => {
   const { values, setValues } = useState({
     username: "",
+    users_first_and_last_name: "",
+    display_name: "",
     email: "",
-    password: "",
-    password2: "",
   });
-  const [errors, setErrors] = useState({});
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setValues({
-      ...values,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // await fetch(`${localEndpoint}/signup`, {
-    //   method: "POST",
-    //   body: JSON.stringify(values),
-    // });
-    axios.post(`${localEndpoint}/signup`, values);
-  };
-  return { handleChange, values, handleSubmit };
 };
 
 export default userForm;

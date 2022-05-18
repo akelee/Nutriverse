@@ -1,23 +1,15 @@
-import React from 'react'
-import './signup.css'
-import userForm from "../forms/UserForm";
-import { Link } from 'react-router-dom';
-import signUpValidate from '../signUpValidate/SignUpValidate'
+import React from "react";
+import "./signup.css";
+import signUpForm from "../forms/SignUpForm";
+import { Link } from "react-router-dom";
+import signUpValidate from "../signUpValidate/SignUpValidate";
 
 function handleClick(event) {
   return "You have not filled out all the fields yet";
 }
 
-function handleSubmit(e) {
-  // if(validateInfo(e)) 
-  console.log(e);
-    // return <Link to="/success"></Link>;
-
-}
-
 const SignUp = () => {
-  const { handleChange, handleClick, handleSubmit, values } = userForm();
-
+  const { handleChange, handleClick, handleSubmit, values } = signUpForm();
   return (
     <div className="nutriverse__signup-container">
       <form className="form" onSubmit={handleSubmit}>
@@ -33,20 +25,22 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your username"
             value={values.username}
+            onChange={handleChange}
             // onBlur={}
           />
         </div>
         <div className="form-input">
-          <label htmlFor="Email" className="form-label">
+          <label htmlFor="email" className="form-label">
             Email
           </label>
           <input
             id="email"
             type="text"
-            name="Email"
+            name="email"
             className="form-input"
-            placeholder="Enter your Email"
+            placeholder="Enter your email"
             value={values.email}
+            onChange={handleChange}
             // onBlur={}
           />
         </div>
@@ -61,6 +55,7 @@ const SignUp = () => {
             className="form-input"
             placeholder="Enter your password"
             value={values.password}
+            onChange={handleChange}
             // onBlur={}
           />
           <div className="password-invalid"></div>
@@ -72,10 +67,11 @@ const SignUp = () => {
           <input
             id="password2"
             type="password"
-            name="confirmpassword"
+            name="password2"
             className="form-input"
             placeholder="Confirm password"
             value={values.password2}
+            onChange={handleChange}
             // onBlur={}
           />
         </div>

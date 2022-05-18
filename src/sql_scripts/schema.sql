@@ -6,14 +6,16 @@ CREATE TABLE IF NOT EXISTS users (
     id INTEGER NOT NULL AUTO_INCREMENT,
     username VARCHAR(20) NOT NULL UNIQUE,
     users_first_and_last_name VARCHAR(50),
-    display_name VARCHAR(50) NOT NULL,
+    display_name VARCHAR(50),
     email VARCHAR(50) NOT NULL,
-    users_password CHAR(8) NOT NULL,
+    users_password CHAR(16) NOT NULL,
+    password_confirmation CHAR(16) NOT NULL,
+    
     is_admin BOOLEAN NOT NULL DEFAULT FALSE,
 
     PRIMARY KEY (id),
     CHECK (LENGTH(username) > 0),
-    CHECK (LENGTH(display_name) > 0)
+    CHECK (LENGTH(email) > 0)
 );
 
 DROP TABLE IF EXISTS dataset;
