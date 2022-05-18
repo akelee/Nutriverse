@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS users (
 
     PRIMARY KEY (id),
     CHECK (LENGTH(username) > 0),
-    CHECK (LENGTH(display_name) > 0)
+    CHECK (LENGTH(email) > 0)
 );
 
 DROP TABLE IF EXISTS dataset;

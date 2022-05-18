@@ -1,3 +1,5 @@
+import axios from "axios";
+
 function sleep(delay) {
   return new Promise((resolve) => {
     setTimeout(() => resolve(), delay);
@@ -34,18 +36,26 @@ export function getUsersDummyData() {
   ];
 }
 
+const endpoint = "http://localhost:8080";
+export const localEndpoint = "http://localhost:8080";
+
 export async function getUsers() {
   // Like `response = requests.get(...)` in Python
-  const response = await fetch("http://127.0.0.1:5000/users");
+  const response = await fetch(`${endpoint}/users`);
+  // Like `return response.json()` in Python
+  return await response.json();
+}
+
+export async function signIn() {
+  // Like `response = requests.get(...)` in Python
+  const response = await fetch(`${endpoint}/signin`);
   // Like `return response.json()` in Python
   return await response.json();
 }
 
 export async function signUp() {
   // Like `response = requests.get(...)` in Python
-  const response = await fetch("http://127.0.0.1:5000/signup");
+  const response = await fetch(`${endpoint}/signup`);
   // Like `return response.json()` in Python
   return await response.json();
 }
-
-export const localEndpoint = "http://localhost:8080";
