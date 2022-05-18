@@ -7,14 +7,18 @@ import nutrient from '../../assets/nutrients.png'
 import ingredients from '../../assets/ingredients.png'
 import scale from '../../assets/scale.png'
 import RecipeList from "../RecipeList"
+import '../../pages/recipeList.css'
+
 
 
 const Recipe = () => {
   const [query, setQuery] = useState("")
+  // const [includeNutrition, setIncludeNutrition] = useState("")
+  // const [diet, setDiet] = useState("")
 
   const APP_KEY = "740b00f217f748a49fc4253694287265"
   
-  const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=3&apiKey=740b00f217f748a49fc4253694287265`
+  const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&addRecipeInformation=true&addRecipeNutrition=true&number=3&apiKey=740b00f217f748a49fc4253694287265`
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -24,7 +28,7 @@ const Recipe = () => {
 
   function getRecipeData() {
     fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=3&apiKey=740b00f217f748a49fc4253694287265`
+      `https://api.spoonacular.com/recipes/complexSearch?query=${query}&addRecipeInformation=true&addRecipeNutrition=true&number=3&apiKey=740b00f217f748a49fc4253694287265`
     )
     .then((response) => response.json())
     .then((data) => {
@@ -35,6 +39,18 @@ const Recipe = () => {
       console.log("error");
     })
   }
+
+  // const [hide, setHide] = useState(null)
+  // const btn = document.getElementById('.btn')
+  // const div = document.getElementById('.recipe-body')
+  // function hide() {
+  //   if (div.style.display!== "none") {
+  //     div.style.display = "none"
+  //   } else {
+  //     div.style.display = "block"
+  //   }
+  //   }
+  // }
 
   return (
     <div className="nutriverse__recipe_container">

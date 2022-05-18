@@ -14,12 +14,14 @@
 }
 
 .nutriverse__navbar-links_logo {
-    /* margin-right: 1.5rem; */
+    margin-right: 1rem;
 }
 
 .nutriverse__navbar-links_logo img {
-    width: 300px;
-    height:60px
+    width: 100%;
+    
+    /* width: 350px;
+    height:60px */
 }
 
 .nutriverse__navbar-links_container {
@@ -34,7 +36,7 @@
     padding: 10px;
     width: 503px;
     height: 57px;
-    margin: 0 7.5rem;
+    margin: 0 5rem;
     font-weight: bold;
 
 }
@@ -87,7 +89,7 @@
     position: absolute;
     width: 179px;
     height: 65px;
-    left: 1150.5px;
+    left: 1070.5px;
     top: 2rem;
     background: #7EB685;
     border-radius: 45.36px;

@@ -1,10 +1,22 @@
 import React from 'react'
+import './recipeList.css'
+
+const button = document.getElementById('.btn')
 
 function RecipeList({recipeData}) {
   console.log(recipeData.results);
   return (
-    <div>{recipeData.results.map(result => 
-      <p>{result.title} <img src={result.image} alt="" /></p>)}</div>
+    <div className="recipe-results">{recipeData.results.map(result => 
+      <p className="result">{result.title} 
+      <div><img src={result.image} alt="" />
+      </div>
+      <div className="info">
+        <a href={result.sourceUrl} target="_blank">View Recipe Here</a></div></p>)
+          
+        }
+        
+      
+      </div>
   )
 }
 
