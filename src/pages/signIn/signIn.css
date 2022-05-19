@@ -1,0 +1,77 @@
+.nutriverse__signin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.nutriverse__signin-container form {
+  background-color: #ffffff;
+  padding: 5rem;
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.nutriverse__signin-container h1 {
+  color: var(--color-text-header-2);
+  margin-bottom: 1rem;
+}
+
+.form-input label {
+  padding-bottom: 1rem;
+  color: var(--color-text-body-2);
+}
+
+.form-input {
+  padding: 0.6rem;
+  width: 100%;
+  margin-top: 0.3rem;
+}
+
+.btn-signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input-btn {
+  width: 150px;
+  height: 55px;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  background: #7eb685;
+  border-radius: 45.36px;
+  border: none;
+  color: var(--color-text-button);
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-input-btn:hover {
+  color: rgba(79, 79, 79, 0.846);
+  transition: color 0.4s;
+}
+
+.form-input-login {
+  font-size: 24px;
+}
+
+.form-input-login a {
+  font-weight: bold;
+  color: var(--color-text-header-2);
+}
+
+.form-input-login a:hover {
+  color: var(--color-button-2);
+  transition: color 0.4s;
+}
+
+@media screen and(max-width: 690px) {
+  /* .btn-signin{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+}

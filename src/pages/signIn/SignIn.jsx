@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SignIn = () => {
   const { handleChange, values, handleSubmit } = signInForm();
   return (
-    <div className="nutriverse__signup-container">
+    <div className="nutriverse__signin-container">
       <form className="form" onSubmit={handleSubmit}>
         <h1>Sign in to your nutriverse account!</h1>
         <div className="form-input">
