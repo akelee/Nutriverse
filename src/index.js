@@ -15,7 +15,7 @@ import Values from "./pages/values/Values";
 import Goals from "./pages/goals/Goals";
 import SignUpValidate from "./pages/signUpValidate/SignUpValidate";
 import Navbar from "./components/navbar/Navbar";
-import RecipeList from "./pages/RecipeList.jsx";
+import RecipeList from "./pages/RecipeList";
 import SignUpSuccessful from "./pages/signUpSuccessful/SignUpSuccessful";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
