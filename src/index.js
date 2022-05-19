@@ -37,9 +37,6 @@ root.render(
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/signUpValidate" element = { <SignUpValidate/>} />
         <Route path="/recipeList" element = { <RecipeList/>} />
-        <Route path="/byNutrients" element = {<ByNutrients/>} />
-        <Route path='/byNutrientsList' element = {<ByNutrientsList />} />
-        <Route path='/userInput' element = {<UserInputList />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
