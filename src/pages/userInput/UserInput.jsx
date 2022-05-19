@@ -1,9 +1,38 @@
-import React from 'react'
+import React, { useState }  from 'react'
 import './userInput.css'
+import './userInputList'
 
 
 
 const UserInput = () => {
+
+  const [typeformData, setTypeformData] = useState(null)
+  
+  const [query, setQuery] = useState("")
+
+  const APP_KEY =  "tfp_DyyiNaWaAbHFxxd4DrjVN9kPrtaM98F4FNDaWd4DM8Rg_3sv1LWpaR2JaAG"
+
+  const url = `
+  https://api.typeform.com/forms/MYesPtMj/responses&apiKey=tfp_DyyiNaWaAbHFxxd4DrjVN9kPrtaM98F4FNDaWd4DM8Rg_3sv1LWpaR2JaAG`
+
+  const handleSubmit = e => {
+    e.preventDefault();
+  }
+
+  function getTypeformData() {
+    fetch(
+      `https://api.typeform.com/forms/MYesPtMj/responses&apiKey=tfp_DyyiNaWaAbHFxxd4DrjVN9kPrtaM98F4FNDaWd4DM8Rg_3sv1LWpaR2JaAG`
+    )
+    .then((response) => response.json())
+    .then((data) => {
+      setTypeformData(data);
+      console.log(data);
+    })
+    .catch(() => {
+      console.log("error");
+    })
+  }
+
   return (
     <div className="nutriverse__userInput-container">
       <div className="nutriverse__typeform">
@@ -16,5 +45,7 @@ const UserInput = () => {
 export default UserInput
 
 // tfp_DyyiNaWaAbHFxxd4DrjVN9kPrtaM98F4FNDaWd4DM8Rg_3sv1LWpaR2JaAG
+
+// https://api.typeform.com/forms/MYesPtMj/responses
 
  

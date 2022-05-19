@@ -64,7 +64,7 @@ const Recipe = () => {
           </div>
           <div className="recipe-body">
             <div id="nutrients">
-              <Link to="/"><img src={nutrient} alt="nutrient" width="280px" /><Feature text ="Search recipes by nutrients"/></Link>
+              <Link to="/byNutrients"><img src={nutrient} alt="nutrient" width="280px" /><Feature text ="Search recipes by nutrients"/></Link>
               </div>
             <div id="ingredients">
               <Link to="/"><img src={ingredients} alt="nutrient" width="280px" />

@@ -1,7 +1,6 @@
 import React from 'react'
 import './recipeList.css'
 
-const button = document.getElementById('.btn')
 
 function RecipeList({recipeData}) {
   console.log(recipeData.results);
