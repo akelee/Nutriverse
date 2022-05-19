@@ -1,12 +1,10 @@
-import axios from "axios";
-
 function sleep(delay) {
   return new Promise((resolve) => {
     setTimeout(() => resolve(), delay);
   });
 }
 
-export function getUsersDummyData() {
+export function getDummyUsers() {
   sleep(1000);
   return [
     {
@@ -40,17 +38,25 @@ const endpoint = "http://localhost:8080";
 export const localEndpoint = "http://localhost:8080";
 
 export async function getUsers() {
-  // Like `response = requests.get(...)` in Python
-  const response = await fetch(`${endpoint}/users`);
-  // Like `return response.json()` in Python
-  return await response.json();
+  try {
+    // Like `response = requests.get(...)` in Python
+    const response = await fetch(`${endpoint}/users`);
+    // Like `return response.json()` in Python
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export async function signIn() {
-  // Like `response = requests.get(...)` in Python
-  const response = await fetch(`${endpoint}/signin`);
-  // Like `return response.json()` in Python
-  return await response.json();
+  try {
+    // Like `response = requests.get(...)` in Python
+    const response = await fetch(`${endpoint}/signin`);
+    // Like `return response.json()` in Python
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export async function signUp() {
