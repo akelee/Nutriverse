@@ -1,0 +1,16 @@
+.recipe-results {
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+    color: cadetblue;
+    width:100%;
+}
+
+img {
+    border-radius: 15px;
+    max-width: 250px;
+}
+
+.result {
+    margin-top: 3rem;
+}
