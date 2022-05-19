@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Axios from 'axios'
 import './recipe.css'
-import { Feature } from '../../components'
+import Feature from '../../components/feature/Feature'
 import { Link } from 'react-router-dom';
 import nutrient from '../../assets/nutrients.png'
 import ingredients from '../../assets/ingredients.png'

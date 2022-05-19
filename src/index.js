@@ -5,7 +5,7 @@ import "./index.css";
 import Home from "./pages/home/Home";
 import Recipe from "./pages/recipe/Recipe";
 import Popular from "./pages/popular/Popular";
-import SignUp from "./pages/signUp/SignUp";
+import SignUp from "./pages/signup/SignUp";
 import SignIn from "./pages/signIn/SignIn";
 import UserInput from "./pages/userInput/UserInput";
 import Meal from "./pages/meal/Meal";
@@ -14,7 +14,7 @@ import About from "./pages/about/About";
 import Values from "./pages/values/Values";
 import Goals from "./pages/goals/Goals";
 import SignUpValidate from "./pages/signUpValidate/SignUpValidate";
-import { Navbar } from "./components";
+import Navbar from "./components/navbar/Navbar";
 import RecipeList from "./pages/RecipeList.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
