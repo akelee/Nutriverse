@@ -1,16 +1,16 @@
 from flask import Flask, render_template, url_for
-# import jsonify
-# import mysql.connector
+import jsonify
+import mysql.connector
 
 app = Flask(__name__)
 PORT = 5000
 
-# connection = mysql.connector.connect(
-#     host="localhost",
-#     database="nutriverse-db",
-#     user="nutriverse-admin",
-#     password="my-secret-password",
-# )
+connection = mysql.connector.connect(
+    host="localhost",
+    database="nutriverse-db",
+    user="nutriverse-admin",
+    password="my-secret-password",
+)
 
 
 @app.get('/')
@@ -27,6 +27,30 @@ def hello_world():
 @app.get('/Python')
 def hello_python():
     return 'Hello Python!'
+
+
+@app.get('/users')
+def get_users():
+    cursor = connection.cursor(dictionary=True)
+    cursor.execute("""SELECT u.id, u.username, u.display_name
+                      FROM users u""")
+    results = cursor.fetchall()
+    cursor.close()
+    response = jsonify(results)
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
+
+
+@app.get('/signup')
+def sign_up(username, email, password, password2):
+    cursor = connection.cursor(dictionary=True)
+    cursor.execute(""""INSERT INTO `users` (username, email, users_password, password_confirmation) \
+    VALUES (%s, %s, %s, %s)""", [username, email, password, password2])
+    results = cursor.fetchall()
+    cursor.close()
+    response = jsonify(results)
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
 
 
 @app.get('/users/str:<user_name>')
