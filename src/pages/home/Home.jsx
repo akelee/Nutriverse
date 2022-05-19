@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer, Header, WhatNutriverse } from "../../containers";
-import { Brand, Navbar } from "../../components";
+import Brand from "../brand/Brand";
+
 import { Route, Link } from "react-router-dom";
 
 import "./home.css";
