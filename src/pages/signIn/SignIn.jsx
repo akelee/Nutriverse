@@ -1,6 +1,6 @@
 import React from "react";
-import "./signIn.css";
-import signInForm from "../forms/SignInForm";
+import "./signin.css";
+import signInForm from "../../components/forms/SignInForm";
 import { Link } from "react-router-dom";
 // import signInValidate from "../signUpValidate/SignInValidate";
 
@@ -50,7 +50,7 @@ const SignIn = () => {
             Sign in
           </button>
           <span className="form-input-login">
-            Click <Link to="/account">here </Link>
+            Click <Link to="/reset">here </Link>
             to reset your password
           </span>
         </div>

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./signupsuccessful.css";
 
-const SignUpSuccessful = () => {
+const SignUpSuccessfulPage = () => {
   return (
     <div className="success-container">
-      <div className="h1-container">
-        <h1>Thank you for signing up!</h1>
+      <div className="h2-container">
+        <h2>Thank you for signing up!</h2>
       </div>
       <div>
         <Link to="/account">
@@ -16,4 +17,4 @@ const SignUpSuccessful = () => {
   );
 };
 
-export default SignUpSuccessful;
+export default SignUpSuccessfulPage;
