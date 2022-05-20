@@ -9,7 +9,6 @@ const signUpForm = () => {
     username: "",
     email: "",
     password: "",
-    password2: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -36,7 +35,7 @@ const signUpForm = () => {
       console.log(err);
     }
   };
-  return { handleChange, values, handleSubmit };
+  return { handleChange, handleSubmit, values };
 };
 
 export default signUpForm;

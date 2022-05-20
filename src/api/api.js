@@ -60,8 +60,12 @@ export async function signIn() {
 }
 
 export async function signUp() {
-  // Like `response = requests.get(...)` in Python
-  const response = await fetch(`${endpoint}/signup`);
-  // Like `return response.json()` in Python
-  return await response.json();
+  try {
+    // Like `response = requests.get(...)` in Python
+    const response = await fetch(`${endpoint}/signup`);
+    // Like `return response.json()` in Python
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
 }

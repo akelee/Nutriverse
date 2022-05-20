@@ -29,15 +29,15 @@ root.render(
         <Route path="/home" element={<Home />} />
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/popular" element={<Popular />} />
-        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/userInput" element={<UserInput />} />
+        <Route path="/userinput" element={<UserInput />} />
         <Route path="/meal" element={<Meal />} />
         <Route path="/plan" element={<Plan />} />
         <Route path="/values" element={<Values />} />
         <Route path="/goals" element={<Goals />} />
-        <Route path="/signUpValidate" element={<SignUpValidate />} />
-        <Route path="/recipeList" element={<RecipeList />} />
+        <Route path="/signupvalidate" element={<SignUpValidate />} />
+        <Route path="/recipelist" element={<RecipeList />} />
         <Route path="/success" element={<SignUpSuccessful />} />
       </Routes>
     </BrowserRouter>
