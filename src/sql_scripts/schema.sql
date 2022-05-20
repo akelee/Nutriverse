@@ -9,7 +9,6 @@ CREATE TABLE IF NOT EXISTS users (
     display_name VARCHAR(50),
     email VARCHAR(50) NOT NULL,
     users_password CHAR(16) NOT NULL,
-    password_confirmation CHAR(16) NOT NULL,
     
     is_admin BOOLEAN NOT NULL DEFAULT FALSE,
 

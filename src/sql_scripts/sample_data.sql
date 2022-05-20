@@ -1,9 +1,9 @@
 USE nutriverse;
 
-INSERT INTO users (username, users_first_and_last_name, display_name, email, users_password, password_confirmation, is_admin) VALUES
-	('alexis-lee', 'Alexis Lee', 'Alexis', 'alexis-lee@nutriverse.com', 'password', 'password', TRUE),
-	('patricia-santos', 'Patricia Buchner Santos', 'Patricia', 'patricia-santos@nutriverse.com', 'password', 'password', TRUE),
-	('zoe-b-scott', 'Zoe Bianca Scott', 'Zoe', 'zoe-scott@nutriverse.com', 'password', 'password', TRUE);
+INSERT INTO users (username, users_first_and_last_name, display_name, email, users_password, is_admin) VALUES
+	('alexis-lee', 'Alexis Lee', 'Alexis', 'alexis-lee@nutriverse.com', 'password', TRUE),
+	('patricia-santos', 'Patricia Buchner Santos', 'Patricia', 'patricia-santos@nutriverse.com', 'password', TRUE),
+	('zoe-b-scott', 'Zoe Bianca Scott', 'Zoe', 'zoe-scott@nutriverse.com', 'password', TRUE);
 
 INSERT INTO dataset (age, gender, weight_kg, weight_pounds, height_cm, height_feet, activity_level, pregnancy_status) VALUES
 	(25, 'female', 64, Null, 168, Null, 'moderate', 'pregnant'),

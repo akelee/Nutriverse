@@ -24,29 +24,69 @@ connection.connect(() => {
 
 app.get("/users", function getUsers(req, res) {
   console.log("req.body", req.body);
-  console.log("getUsers was called");
+  console.log("getUsers function was called");
   connection.query("SELECT * FROM `users`", (err, results) => {
-    console.log("Results", results);
+    console.log("Results:", results);
     if (err) throw err;
     res.status(200).json(results);
   });
 });
 
+app.get("/signin", function signIn(req, res) {
+  const username = req.body.username;
+  const email = req.body.username; // do not change this
+  const users_password = req.body.password;
+  if (email && password) {
+    try {
+      console.log("req.body", req.body);
+      console.log("signIn function was called");
+      connection.query(
+        "SELECT username, email FROM `users` \
+        WHERE username = ? OR email = ? AND password = ?",
+        [username, username, users_password],
+        (err, results) => {
+          if (err) {
+            res.status(400).json(err);
+            response.end();
+          }
+          if (results.length > 0) {
+            console.log("Results:\n", results);
+            // request.session.loggedin = true;
+            // request.session.username = username;
+            response.redirect("/account");
+          } else {
+            response.send("Incorrect Username and/or Password!");
+          }
+          response.end();
+        }
+      );
+    } catch (error) {
+      console.log(error);
+      res.status(400).json(err);
+      response.send(error);
+    }
+  } else {
+    response.send("Please enter Username and Password!");
+    response.end();
+  }
+});
+
 app.post("/signup", function signUp(req, res) {
   try {
     console.log(req.body);
-    console.log("/signup function signUp");
+    console.log("/signUp function was called");
     const username = req.body.username;
     const email = req.body.email;
     const user_password = req.body.password;
-    const password_confirmation = req.body.password2;
+    // const password_confrimation = req.body.password2;
 
     connection.query(
-      "INSERT INTO `users` (username, email, users_password, password_confirmation) \
-    VALUES (?, ?, ?, ?)",
+      "INSERT INTO `users` (username, email, users_password) \
+      VALUES(?, ?, ?)",
       // [req.body.username, req.body.email, req.body.password, req.body.password2],
-      [username, email, user_password, password_confirmation],
+      [username, email, user_password],
       (err, results) => {
+        console.log("Results:\n", results);
         if (err) {
           res.status(400).json(err);
         }

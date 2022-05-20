@@ -42,10 +42,21 @@ def get_users():
 
 
 @app.get('/signup')
-def sign_up(username, email, password, password2):
+def sign_up(username, email, password):
     cursor = connection.cursor(dictionary=True)
-    cursor.execute(""""INSERT INTO `users` (username, email, users_password, password_confirmation) \
-    VALUES (%s, %s, %s, %s)""", [username, email, password, password2])
+    cursor.execute("""INSERT INTO users (username, email, users_password)
+                       VALUES (%s, %s, %s)""", [username, email, password])
+    results = cursor.fetchall()
+    cursor.close()
+    response = jsonify(results)
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
+
+
+@app.get('/signin')
+def sign_up(username, password):
+    cursor = connection.cursor(dictionary=True)
+    cursor.execute("""QUERY""");
     results = cursor.fetchall()
     cursor.close()
     response = jsonify(results)

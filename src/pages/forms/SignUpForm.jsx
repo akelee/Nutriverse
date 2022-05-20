@@ -9,7 +9,6 @@ const signUpForm = () => {
     username: "",
     email: "",
     password: "",
-    password2: "",
   });
 
   const [errors, setErrors] = useState({});
