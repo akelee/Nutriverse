@@ -11,6 +11,7 @@ import '../../pages/recipeList.css'
 
 
 
+
 const Recipe = () => {
   const [query, setQuery] = useState("")
   // const [includeNutrition, setIncludeNutrition] = useState("")
@@ -39,19 +40,7 @@ const Recipe = () => {
       console.log("error");
     })
   }
-
-  // const [hide, setHide] = useState(null)
-  // const btn = document.getElementById('.btn')
-  // const div = document.getElementById('.recipe-body')
-  // function hide() {
-  //   if (div.style.display!== "none") {
-  //     div.style.display = "none"
-  //   } else {
-  //     div.style.display = "block"
-  //   }
-  //   }
-  // }
-
+  
   return (
     <div className="nutriverse__recipe_container">
       <div className="nutriverse__recipe_info">
@@ -64,14 +53,14 @@ const Recipe = () => {
           </div>
           <div className="recipe-body">
             <div id="nutrients">
-              <Link to="/"><img src={nutrient} alt="nutrient" width="280px" /><Feature text ="Search recipes by nutrients"/></Link>
+              <Link to="/byNutrients"><img src={nutrient} alt="nutrient" width="280px" /><Feature text ="Search recipes by nutrients"/></Link>
               </div>
             <div id="ingredients">
-              <Link to="/"><img src={ingredients} alt="nutrient" width="280px" />
+              <Link to="/byIngredients"><img src={ingredients} alt="nutrient" width="280px" />
               <Feature text ="Search by ingredients"/></Link>
               </div>
             <div id="analyserecipe">
-              <Link to="/"><img src={scale} alt="nutrient" width="280px" />
+              <Link to="/analyserecipes"><img src={scale} alt="nutrient" width="280px" />
               <Feature text ="Analyse recipe"/></Link>
             </div>
           </div>

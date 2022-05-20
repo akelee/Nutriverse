@@ -5,7 +5,7 @@ import "./index.css";
 import Home from "./pages/home/Home";
 import Recipe from "./pages/recipe/Recipe";
 import Popular from "./pages/popular/Popular";
-import SignUp from "./pages/signUp/SignUp";
+import SignUp from "./pages/signup/SignUp";
 import SignIn from "./pages/signIn/SignIn";
 import UserInput from "./pages/userInput/UserInput";
 import Meal from "./pages/meal/Meal";
@@ -16,6 +16,10 @@ import Goals from "./pages/goals/Goals";
 import SignUpValidate from "./pages/signUpValidate/SignUpValidate";
 import { Navbar } from "./components";
 import RecipeList from "./pages/RecipeList.jsx";
+import ByNutrients from "./pages/byNutrients/ByNutrients";
+import ByIngredients from "./pages/byIngredients/ByIngredients";
+import AnalyseRecipes from "./pages/analyseRecipes/AnalyseRecipes";
+import ByNutrientsList from "./pages/ByNutrientsList.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -37,6 +41,10 @@ root.render(
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/signUpValidate" element={<SignUpValidate />} />
         <Route path="/recipeList" element={<RecipeList />} />
+        <Route path="/byNutrients" element={<ByNutrients />} />
+        <Route path="/byIngredients" element={<ByIngredients />} />
+        <Route path="/analyseRecipes" element={<AnalyseRecipes />} />
+        <Route path="/byNutrientsList" element={<ByNutrientsList />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

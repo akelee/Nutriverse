@@ -1,4 +1,4 @@
-export { default as Article } from "./Article/Article.jsx";
+export { default as Article } from "./article/Article.jsx";
 export { default as Brand } from "../pages/brand/Brand.jsx";
-export { default as Navbar } from "./Navbar/Navbar.jsx";
-export { default as Feature } from "./Feature/Feature.jsx";
+export { default as Navbar } from "./navbar/Navbar.jsx";
+export { default as Feature } from "./feature/Feature.jsx";
