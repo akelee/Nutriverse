@@ -35,7 +35,7 @@ const signUpForm = () => {
       console.log(err);
     }
   };
-  return { handleChange, values, handleSubmit };
+  return { handleChange, handleSubmit, values };
 };
 
 export default signUpForm;

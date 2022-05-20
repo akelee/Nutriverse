@@ -1,0 +1,20 @@
+.success-container {
+  background-color: #ffffff;
+  padding: 5rem;
+  border-radius: 15px;
+  max-width: 100%;
+  color: var(--color-text-button);
+}
+
+.h1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  padding: 5rem;
+  border-radius: 15px;
+  max-width: 100%;
+  color: var(--color-text-button);
+}

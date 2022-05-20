@@ -7,6 +7,8 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
+console.log(`Server started on port ${PORT}`);
+
 const connection = mysql.createConnection({
   host: "localhost",
   database: "nutriverse",
@@ -34,40 +36,42 @@ app.get("/users", function getUsers(req, res) {
 
 app.get("/signin", function signIn(req, res) {
   const username = req.body.username;
-  const email = req.body.username; // do not change this
   const users_password = req.body.password;
-  if (email && password) {
+  const email = req.body.username; // do not change this
+  if (username && password) {
     try {
       console.log("req.body", req.body);
       console.log("signIn function was called");
+
       connection.query(
         "SELECT username, email FROM `users` \
         WHERE username = ? OR email = ? AND password = ?",
         [username, username, users_password],
         (err, results) => {
+          console.log("Results:\n", results);
           if (err) {
             res.status(400).json(err);
-            response.end();
+            // response.end();
           }
+          /*
           if (results.length > 0) {
-            console.log("Results:\n", results);
             // request.session.loggedin = true;
             // request.session.username = username;
             response.redirect("/account");
           } else {
-            response.send("Incorrect Username and/or Password!");
+            response.send("Please enter Username and Password!");
+            // response.send("Incorrect Username and/or Password!");
           }
-          response.end();
+          // response.end();
+          */
         }
       );
+      res.status(200).send("signIn successful");
     } catch (error) {
       console.log(error);
       res.status(400).json(err);
-      response.send(error);
+      // response.send(error);
     }
-  } else {
-    response.send("Please enter Username and Password!");
-    response.end();
   }
 });
 
