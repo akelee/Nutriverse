@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import ByNutrientsList from '../ByNutrientsList'
+import ByNutrientsList from '../byNutrientsList/ByNutrientsList'
 import './byNutrients.css'
 
 const ByNutrients = () => {
 
       const [query, setQuery] = useState("")
-  // const [includeNutrition, setIncludeNutrition] = useState("")
-  // const [diet, setDiet] = useState("")
 
   const APP_KEY = "740b00f217f748a49fc4253694287265"
   
