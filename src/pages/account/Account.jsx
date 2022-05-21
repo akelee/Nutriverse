@@ -6,7 +6,7 @@ const AccountPage = () => {
   return (
     <div className="account-container">
       <div className="h2-container">
-        <h2>Thank you for signing up!</h2>
+        <h2>Your account details:</h2>
       </div>
     </div>
   );

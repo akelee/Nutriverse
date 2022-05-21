@@ -49,15 +49,6 @@ const Meal = () => {
               <h1>Meal planning</h1>
               <p>An essential part of staying healthy is having appropriate meals for you. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ipsam hic enim labore dignissimos est, atque saepe, fuga vitae temporibus minus magnam magni beatae provident corrupti voluptates aliquid suscipit ratione.
               </p>
-              {/* <Link to="/byNutrients"><img src={nutrient} alt="nutrient" width="280px" /><Feature text ="Search meals by nutrients"/></Link>
-              </div>
-            <div id="ingredients">
-              <Link to="/byIngredients"><img src={ingredients} alt="nutrient" width="280px" />
-              <Feature text ="Search by ingredients"/></Link>
-              </div>
-            <div id="analysemeal">
-              <Link to="/analysemeals"><img src={scale} alt="nutrient" width="280px" />
-              <Feature text ="Analyse meal"/></Link> */}
             </div>
           </div>
         </div>

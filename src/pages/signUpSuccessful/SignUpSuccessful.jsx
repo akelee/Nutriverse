@@ -8,7 +8,7 @@ const SignUpSuccessfulPage = () => {
       <div className="h2-container">
         <h2>Thank you for signing up!</h2>
       </div>
-      <div>
+      <div id="button">
         <Link to="/account">
           <button className="btn btn-success">My account</button>
         </Link>
