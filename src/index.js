@@ -18,7 +18,7 @@ import RecipeList from "./pages/RecipeList.jsx";
 import ByNutrients from "./pages/byNutrients/ByNutrients";
 import ByIngredients from "./pages/byIngredients/ByIngredients";
 import AnalyseRecipes from "./pages/analyseRecipes/AnalyseRecipes";
-import ByNutrientsList from "./pages/ByNutrientsList.jsx";
+import ByNutrientsList from "./pages/ByNutrientsList";
 import Navbar from "./components/navbar/Navbar";
 import RecipeList from "./pages/RecipeList";
 import SignUpSuccessful from "./pages/signUpSuccessful/SignUpSuccessful";
