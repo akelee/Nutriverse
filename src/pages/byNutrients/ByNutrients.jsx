@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Feature } from '../../components'
 import { Link } from 'react-router-dom';
 import ByNutrientsList from '../ByNutrientsList'
 import './byNutrients.css'
