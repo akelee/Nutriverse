@@ -41,6 +41,18 @@ const Recipe = () => {
     })
   }
   
+ // const [hide, setHide] = useState(null)
+  // const btn = document.getElementById('.btn')
+  // const div = document.getElementById('.recipe-body')
+  // function hide() {
+  //   if (div.style.display!== "none") {
+  //     div.style.display = "none"
+  //   } else {
+  //     div.style.display = "block"
+  //   }
+  //   }
+  // }
+
   return (
     <div className="nutriverse__recipe_container">
       <div className="nutriverse__recipe_info">

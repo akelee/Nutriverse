@@ -5,7 +5,7 @@ import "./index.css";
 import Home from "./pages/home/Home";
 import Recipe from "./pages/recipe/Recipe";
 import Popular from "./pages/popular/Popular";
-import SignUp from "./pages/signup/SignUp";
+import SignUp from "./pages/signUp/SignUp";
 import SignIn from "./pages/signIn/SignIn";
 import UserInput from "./pages/userInput/UserInput";
 import Meal from "./pages/meal/Meal";
