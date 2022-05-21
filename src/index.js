@@ -21,6 +21,7 @@ import ByNutrientsList from "./pages/ByNutrientsList";
 import Navbar from "./components/navbar/Navbar";
 import RecipeList from "./pages/RecipeList";
 import SignUpSuccessful from "./pages/signUpSuccessful/SignUpSuccessful";
+import Account from "./pages/account/Account";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -47,6 +48,7 @@ root.render(
         <Route path="/signupvalidate" element={<SignUpValidate />} />
         <Route path="/recipelist" element={<RecipeList />} />
         <Route path="/success" element={<SignUpSuccessful />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
