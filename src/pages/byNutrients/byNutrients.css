@@ -1,0 +1,106 @@
+.nutriverse__byNutrients_container {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.2rem;
+
+}
+.btn {
+    font-size: 16px;
+    padding: .7rem 1.5rem;
+    margin-left: .3rem;
+    border-radius: 15px;
+    border:none;
+    background-color: var(--color-button-2);
+    color:var(--color-text-button);
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgba(79, 79, 79, 0.846);
+    transition: color .4s;
+}
+
+.searchbar input {
+    padding:.6rem;
+    font-size: 16px;
+    border-radius: 15px;
+    border-style:double;
+    font-style: italic;
+}
+
+.byNutrients-body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* flex-wrap: wrap; */
+    margin: 4rem 10rem;
+
+}
+.nutriverse__byNutrients_info {
+    background-color: #ffffff; 
+    max-width:70%;
+    border-radius: 15px;    
+}
+
+.byNutrients-body h1 {
+    padding-right:3rem;
+}
+
+.byNutrients-body div {
+    text-align: center;
+    font-size: 20px;
+    margin: 1.5rem;
+    margin-top: -2rem;
+    margin-left: -2rem;
+}
+
+#nutrients-about {
+    color: var(--color-button-1);
+}
+
+@media screen and (max-width:960px) {
+    .nutriverse__byNutrients_container div {   
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: .6rem;
+    }
+    .btn {
+        margin-top: .5rem;  
+      }
+}
+
+@media screen and (max-width:650px){
+    .nutriverse__byNutrients_container div {   
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: .6rem;
+    }
+
+    .byNutrients {
+        margin-top: -3.7rem;
+    }
+    .nutriverse__whatNutriverse-container {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    .btn {
+      margin-top: .5rem;  
+    }
+}
+
+@media screen and (max-width:550px) {
+    .byNutrients {
+        margin-top: 2rem;
+    }
+}

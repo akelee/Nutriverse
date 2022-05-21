@@ -14,6 +14,11 @@ import About from "./pages/about/About";
 import Values from "./pages/values/Values";
 import Goals from "./pages/goals/Goals";
 import SignUpValidate from "./pages/signUpValidate/SignUpValidate";
+import RecipeList from "./pages/RecipeList.jsx";
+import ByNutrients from "./pages/byNutrients/ByNutrients";
+import ByIngredients from "./pages/byIngredients/ByIngredients";
+import AnalyseRecipes from "./pages/analyseRecipes/AnalyseRecipes";
+import ByNutrientsList from "./pages/ByNutrientsList";
 import Navbar from "./components/navbar/Navbar";
 import RecipeList from "./pages/RecipeList";
 import SignUpSuccessful from "./pages/signUpSuccessful/SignUpSuccessful";
@@ -36,6 +41,10 @@ root.render(
         <Route path="/plan" element={<Plan />} />
         <Route path="/values" element={<Values />} />
         <Route path="/goals" element={<Goals />} />
+        <Route path="/byNutrients" element={<ByNutrients />} />
+        <Route path="/byIngredients" element={<ByIngredients />} />
+        <Route path="/analyseRecipes" element={<AnalyseRecipes />} />
+        <Route path="/byNutrientsList" element={<ByNutrientsList />} />
         <Route path="/signupvalidate" element={<SignUpValidate />} />
         <Route path="/recipelist" element={<RecipeList />} />
         <Route path="/success" element={<SignUpSuccessful />} />
