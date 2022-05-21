@@ -1,13 +1,14 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { localEndpoint, signUp } from "../../api/api";
+import { useNavigate } from "react-router-dom";
 
 const signUpForm = () => {
+  const navigate = useNavigate();
   const [values, setValues] = useState({
     username: "",
     email: "",
     password: "",
-    password2: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -28,12 +29,13 @@ const signUpForm = () => {
       //   method: "POST",
       //   body: JSON.stringify("Hello"),
       // });
-      axios.post(`${localEndpoint}/signup`, values);
+      await axios.post(`${localEndpoint}/signup`, values);
+      navigate("/success");
     } catch (err) {
       console.log(err);
     }
   };
-  return { handleChange, values, handleSubmit };
+  return { handleChange, handleSubmit, values };
 };
 
 export default signUpForm;

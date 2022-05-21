@@ -1,6 +1,6 @@
 import React from 'react'
 import './whatNutriverse.css'
-import { Feature } from '../../components'
+import Feature from '../../components/feature/Feature'
 import { Link } from 'react-router-dom';
 import recipe from '../../assets/recipe.png'
 import plan from '../../assets/plan.png'

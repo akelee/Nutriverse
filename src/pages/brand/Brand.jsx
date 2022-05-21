@@ -1,6 +1,6 @@
 import React from 'react';
 import './brand.css';
-import { Feature } from '../../components';
+import Feature from '../../components/feature/Feature';
 import aboutUs from '../../assets/aboutUs.png';
 import ourGoals from '../../assets/ourGoals.png';
 import ourValues from '../../assets/ourValues.png';

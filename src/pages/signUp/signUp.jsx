@@ -1,6 +1,6 @@
 import React from "react";
 import "./signup.css";
-import signUpForm from "../forms/SignUpForm";
+import signUpForm from "../../components/forms/SignUpForm";
 import { Link } from "react-router-dom";
 import signUpValidate from "../signUpValidate/SignUpValidate";
 
@@ -70,8 +70,8 @@ const SignUp = () => {
             name="password2"
             className="form-input"
             placeholder="Confirm password"
-            value={values.password2}
-            onChange={handleChange}
+            // value={values.password2}
+            // onChange={handleChange}
             // onBlur={}
           />
         </div>
