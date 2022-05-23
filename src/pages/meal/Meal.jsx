@@ -7,7 +7,7 @@ const Meal = () => {
 
   const APP_KEY = "740b00f217f748a49fc4253694287265";
 
-  const url = `https://api.spoonacular.com/mealplanner/generate?query=${query}&timeFrame=day&apiKey=740b00f217f748a49fc4253694287265`;
+  const url = `https://api.spoonacular.com/mealplanner/generate?query=${query}&timeFrame=day&targetCalories=${query}&apiKey=740b00f217f748a49fc4253694287265`;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const Meal = () => {
 
   function getMealData() {
     fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?query=${query}&addRecipeInformation=true&addRecipeNutrition=true&number=3&apiKey=740b00f217f748a49fc4253694287265`
+      `https://api.spoonacular.com/recipes/complexSearch?query=${query}&targetCalories=${query}&apiKey=740b00f217f748a49fc4253694287265`
     )
       .then((response) => response.json())
       .then((data) => {

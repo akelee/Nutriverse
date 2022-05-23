@@ -1,6 +1,6 @@
 .recipe-results {
     display: flex;
-    align-items: space-around;
+    align-items: space-between;
     justify-content: center;
     color: cadetblue;
     width:100%;
@@ -9,6 +9,16 @@
 img {
     border-radius: 15px;
     max-width: 250px;
+    margin-left: 2rem;
+    
+}
+
+p {
+    margin-left: 3rem;
+}
+
+.info {
+    margin-left: 3rem;
 }
 
 .result {

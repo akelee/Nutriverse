@@ -1,3 +1,59 @@
+.nutriverse__values-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+}
+
 .nutriverse__values-body {
     background-color: #ffffff;
+    width:70%;
+    border-radius: 15px;
+    display: flex;
 }
+
+.values-header p {
+    margin-left: -.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2rem 6.2rem;
+}
+
+.values-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: -1rem;
+    color: var(--color-button-1);
+} */
+
+
+iframe {
+    margin:2rem 6.2rem;
+    width:697px;
+    height:368px;
+}
+
+
+/* @media screen and (max-width: 768px) {
+    iframe {
+        width:500px;
+        height:258px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    iframe {
+        width:400px;
+        height:200px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    iframe {
+        display: none;
+    }
+} */

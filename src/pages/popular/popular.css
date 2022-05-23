@@ -1,0 +1,11 @@
+.background {
+    background-color:#ffffff;
+    border-radius:15px;
+    margin:2rem;
+    height:100%;
+}
+
+.popular {
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
