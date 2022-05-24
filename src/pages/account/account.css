@@ -1,7 +1,5 @@
 .account-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 2rem 8rem;
   background-color: #ffffff;
   padding: 5rem;
@@ -14,4 +12,8 @@
   padding: 5rem;
   border-radius: 15px;
   max-width: 100%;
+}
+
+.user-details {
+  margin-top: 1rem;
 }
