@@ -22,11 +22,13 @@ connection.connect(() => {
   console.log("Connected to database on port", PORT);
 });
 
-app.get("/users", (req, res) => {
+app.get("/account", (req, res) => {
   console.log("req.body", req.body);
   try {
-    const usersQuery = connection.query(
-      "SELECT u.id, u.username, u.display_name FROM `users` u",
+    const userQuery = connection.query(
+      "SELECT u.id, u.username, u.display_name, u.email FROM `users` u \
+      WHERE u.id = ?",
+      [req.query.id],
       (err, results) => {
         console.log("Results:", results);
         if (err) throw err;
@@ -38,13 +40,11 @@ app.get("/users", (req, res) => {
   }
 });
 
-app.get("/users/?", (req, res) => {
+app.get("/users", (req, res) => {
   console.log("req.body", req.body);
   try {
     const usersQuery = connection.query(
-      "SELECT u.id, u.username, u.display_name FROM `users` u \
-      WHERE u.id = ?",
-      [req.query.id],
+      "SELECT u.id, u.username, u.display_name FROM `users` u",
       (err, results) => {
         console.log("Results:", results);
         if (err) throw err;
@@ -95,8 +95,8 @@ app.post("/signin", function signIn(req, res) {
       );
       console.log(signInQuery.sql);
       res.status(200).send("signIn successful");
-    } catch (error) {
-      console.log("Error occured:\n", error);
+    } catch (err) {
+      console.log("Error occured:\n", err);
       res.status(400).json(err);
       // res.send(error);
     }
@@ -127,8 +127,8 @@ app.post("/signup", function signUp(req, res) {
     );
     console.log(signUpQuery.sql);
     res.status(200).send("signUp successful");
-  } catch (error) {
-    console.log("Error occured:\n", error);
+  } catch (err) {
+    console.log("Error occured:\n", err);
     res.status(400).json(err);
     // res.send(error);
   }

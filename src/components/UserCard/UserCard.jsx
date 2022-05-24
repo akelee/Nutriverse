@@ -1,9 +1,21 @@
-function UserCard({ id, username, display_name }) {
+import React from "react";
+import "./usercard.css";
+
+function UserCard({ username, display_name }) {
   return (
-    <div className="card mt-3">
-      <div className="card-body">
-        <h5 className="card-title">{display_name}</h5>
-        <h6 className="card-subtitle">@{username}</h6>
+    <div className="card-body">
+      <div className="card-title">
+        <h4>Username:</h4>
+      </div>
+      <div className="card-text">
+        <p>{username}</p>
+      </div>
+      <br></br>
+      <div className="card-title">
+        <h4>Display name:</h4>
+      </div>
+      <div className="card-text">
+        <p>{display_name}</p>
       </div>
     </div>
   );

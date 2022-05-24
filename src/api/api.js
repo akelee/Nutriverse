@@ -5,7 +5,7 @@ function sleep(delay) {
 }
 
 export function getDummyUsers() {
-  sleep(1000);
+  // sleep(1000);
   return [
     {
       id: 1,

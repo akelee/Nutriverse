@@ -7,8 +7,7 @@ import nutrient from "../../assets/nutrients.png";
 import ingredients from "../../assets/ingredients.png";
 import scale from "../../assets/scale.png";
 import RecipeList from "../RecipeList";
-import "../../pages/recipeList.css";
-
+import "../../pages/recipelist.css";
 
 const Recipe = () => {
   const [query, setQuery] = useState("");
@@ -38,7 +37,7 @@ const Recipe = () => {
         console.log("error");
       });
   }
-  
+
   return (
     <div className="nutriverse__recipe_container">
       <div className="nutriverse__recipe_info">
@@ -56,20 +55,27 @@ const Recipe = () => {
           </form>
         </div>
         <div className="recipe-body">
-            <div id="nutrients">
-              <Link to="/byNutrients"><img src={nutrient} alt="nutrient" width="280px" /><Feature text ="Search recipes by nutrients"/></Link>
-              </div>
-            <div id="ingredients">
-              <Link to="/byIngredients"><img src={ingredients} alt="nutrient" width="280px" />
-              <Feature text ="Search by ingredients"/></Link>
-              </div>
-            <div id="analyserecipe">
-              <Link to="/analyserecipes"><img src={scale} alt="nutrient" width="280px" />
-              <Feature text ="Analyse recipe"/></Link>
-            </div>
+          <div id="nutrients">
+            <Link to="/byNutrients">
+              <img src={nutrient} alt="nutrient" width="280px" />
+              <Feature text="Search recipes by nutrients" />
+            </Link>
+          </div>
+          <div id="ingredients">
+            <Link to="/byIngredients">
+              <img src={ingredients} alt="nutrient" width="280px" />
+              <Feature text="Search by ingredients" />
+            </Link>
+          </div>
+          <div id="analyserecipe">
+            <Link to="/analyserecipes">
+              <img src={scale} alt="nutrient" width="280px" />
+              <Feature text="Analyse recipe" />
+            </Link>
           </div>
         </div>
       </div>
+    </div>
   );
 };
 
