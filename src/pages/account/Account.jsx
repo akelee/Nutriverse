@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import UserCard from "../../components/UserCard/UserCard";
-import { Link } from "react-router-dom";
 import "./account.css";
 
 import { getDummyUsers } from "../../api/api";
