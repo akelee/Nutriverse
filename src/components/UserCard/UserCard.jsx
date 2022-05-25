@@ -4,7 +4,7 @@ import "./usercard.css";
 function UserCard({ username, display_name, email }) {
   return (
     <div className="user-card-body">
-      <div>
+      <div className="user-card">
         <h4>
           Username: <span className="user-info">{username}</span>
         </h4>
@@ -15,7 +15,7 @@ function UserCard({ username, display_name, email }) {
           Display name: <span className="user-info">{display_name}</span>
         </h4>
         <br></br>
-        <div>
+        <div className="user-card">
           <h4>
             Email: <span className="user-info">{email}</span>
           </h4>
