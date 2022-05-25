@@ -22,11 +22,13 @@ connection.connect(() => {
   console.log("Connected to database on port", PORT);
 });
 
-app.get("/account", (req, res) => {
+app.get("/account/:id", (req, res) => {
   console.log("req.body", req.body);
+  const id = req.body.id;
+
   try {
     const userQuery = connection.query(
-      "SELECT u.id, u.username, u.display_name, u.email FROM `users` u \
+      "SELECT u.username, u.display_name, u.email FROM `users` u \
       WHERE u.id = ?",
       [req.query.id],
       (err, results) => {
@@ -77,7 +79,7 @@ app.post("/signin", function signIn(req, res) {
       const signInQuery = connection.query(
         "SELECT `username`, `users_password` FROM `users` \
         WHERE `username` = ? OR `email` = ? AND `users_password` = ?",
-        [username, username, users_password],
+        [username, email, users_password],
         (err, results) => {
           console.log(`Err: ${err}\nResults: ${results}`);
           // if (results.length > 0) {

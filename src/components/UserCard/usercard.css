@@ -1,8 +1,4 @@
-.card-title {
+.user-info {
+  font-weight: normal;
   display: inline-block;
-}
-
-.card-text {
-  display: inline-block;
-  padding: 0.5em 0.5em;
 }

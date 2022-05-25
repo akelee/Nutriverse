@@ -1,26 +1,25 @@
 .recipe-results {
-    display: flex;
-    align-items: space-between;
-    justify-content: center;
-    color: cadetblue;
-    width:100%;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  color: cadetblue;
+  width: 100%;
 }
 
 img {
-    border-radius: 15px;
-    max-width: 250px;
-    margin-left: 2rem;
-    
+  border-radius: 15px;
+  max-width: 250px;
+  margin: 2rem;
 }
 
 p {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .info {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .result {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
