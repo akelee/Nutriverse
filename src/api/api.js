@@ -1,3 +1,5 @@
+export const localEndpoint = "http://localhost:8080";
+
 function sleep(delay) {
   return new Promise((resolve) => {
     setTimeout(() => resolve(), delay);
@@ -5,7 +7,7 @@ function sleep(delay) {
 }
 
 export function getDummyUsers() {
-  // sleep(1000);
+  sleep(1000);
   return [
     {
       id: 1,
@@ -34,13 +36,21 @@ export function getDummyUsers() {
   ];
 }
 
-const endpoint = "http://localhost:8080";
-export const localEndpoint = "http://localhost:8080";
+export async function getUsersAccountDetails() {
+  try {
+    // Like `response = requests.get(...)` in Python
+    const response = await fetch(`${localEndpoint}/account`);
+    // Like `return response.json()` in Python
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 export async function getUsers() {
   try {
     // Like `response = requests.get(...)` in Python
-    const response = await fetch(`${endpoint}/users`);
+    const response = await fetch(`${localEndpoint}/users`);
     // Like `return response.json()` in Python
     return await response.json();
   } catch (error) {
@@ -51,7 +61,7 @@ export async function getUsers() {
 export async function signIn() {
   try {
     // Like `response = requests.get(...)` in Python
-    const response = await fetch(`${endpoint}/signin`);
+    const response = await fetch(`${localEndpoint}/signin`);
     // Like `return response.json()` in Python
     return await response.json();
   } catch (error) {
@@ -62,7 +72,7 @@ export async function signIn() {
 export async function signUp() {
   try {
     // Like `response = requests.get(...)` in Python
-    const response = await fetch(`${endpoint}/signup`);
+    const response = await fetch(`${localEndpoint}/signup`);
     // Like `return response.json()` in Python
     return await response.json();
   } catch (error) {
