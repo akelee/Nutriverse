@@ -8,3 +8,5 @@ https://docs.google.com/spreadsheets/d/1KsG0s04qSK_XWI9j4Ck_8VT45MjJvfm_FqKfukXP
 2. Run npm install 
 3. Run node app.js
 4. Run npm start
+
+API: spoonacular.com
