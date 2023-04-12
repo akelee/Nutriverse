@@ -10,10 +10,10 @@ const UserInput = () => {
   
   const [query, setQuery] = useState("")
 
-  const APP_KEY =  "tfp_DyyiNaWaAbHFxxd4DrjVN9kPrtaM98F4FNDaWd4DM8Rg_3sv1LWpaR2JaAG"
+  const APP_KEY =  ""
 
   const url = `
-  https://api.typeform.com/forms/MYesPtMj/responses&apiKey=tfp_DyyiNaWaAbHFxxd4DrjVN9kPrtaM98F4FNDaWd4DM8Rg_3sv1LWpaR2JaAG`
+  https://api.typeform.com/forms/MYesPtMj/responses&apiKey=***`
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -21,7 +21,7 @@ const UserInput = () => {
 
   function getTypeformData() {
     fetch(
-      `https://api.typeform.com/forms/MYesPtMj/responses&apiKey=tfp_DyyiNaWaAbHFxxd4DrjVN9kPrtaM98F4FNDaWd4DM8Rg_3sv1LWpaR2JaAG`
+      `https://api.typeform.com/forms/MYesPtMj/responses&apiKey=***`
     )
     .then((response) => response.json())
     .then((data) => {
@@ -42,10 +42,4 @@ const UserInput = () => {
   )
 }
 
-export default UserInput
-
-// tfp_DyyiNaWaAbHFxxd4DrjVN9kPrtaM98F4FNDaWd4DM8Rg_3sv1LWpaR2JaAG
-
-// https://api.typeform.com/forms/MYesPtMj/responses
-
- 
+export default UserInput 
